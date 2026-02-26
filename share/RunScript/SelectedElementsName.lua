@@ -3,11 +3,11 @@ import ('RevitAPI', 'Autodesk.Revit.DB')
 local doc = commandData.Application.ActiveUIDocument.Document
 local uidoc = commandData.Application.ActiveUIDocument
 local sel = uidoc.Selection:GetElementIds()
-outlist = "test"
+outlist = ""
 
 for i = 0, sel.Count-1 do
     elem = doc:GetElement(sel[i])
-    outlist = outlist .. ", " .. elem.Name
+    outlist = outlist .. "\t" .. elem.Name .. "\n" 
 end
 
 return outlist

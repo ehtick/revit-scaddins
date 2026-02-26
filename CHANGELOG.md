@@ -6,6 +6,7 @@
 
 - Add options to copy detail itmes in User View.
 - Add options to use an external editor in RunScript (monaco has been removed)
+- Install without admin. (Installs to %localappdata% and $appdata%)
 
 # 26.2.0 #
 
